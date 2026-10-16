@@ -1,4 +1,4 @@
-# BillSplit — Java / Jakarta Servlet / Oracle Edition
+# BillSplit – AI-Assisted Application Migration
 
 BillSplit is a web-based group-expense splitter. This edition migrates the application to a **Java 17 + Jakarta Servlet 6.0 + JDBC + Oracle SQL** backend, with a **vanilla HTML/CSS/JavaScript** frontend.
 
