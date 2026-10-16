@@ -1,0 +1,10 @@
+target/
+.idea/
+*.iml
+.DS_Store
+config/application.properties
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

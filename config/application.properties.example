@@ -1,0 +1,10 @@
+# Copy this file to application.properties (same directory) or point
+# BILLSPLIT_CONFIG at another properties file. Do not commit real secrets.
+#
+# Environment variables override these values when set:
+#   BILLSPLIT_DB_URL, BILLSPLIT_DB_USER, BILLSPLIT_DB_PASSWORD, GEMINI_API_KEY
+
+db.url=jdbc:oracle:thin:@localhost:1521/XEPDB1
+db.user=YOUR_ORACLE_USERNAME
+db.password=YOUR_ORACLE_PASSWORD
+gemini.api.key=

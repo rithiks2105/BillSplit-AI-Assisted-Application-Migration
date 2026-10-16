@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BillSplit</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header-h1">
+      <span>BillSplit.</span>
+      <button id="logout-btn" class="hidden" type="button">Logout</button>
+    </header>
+
+    <main id="auth-view">
+      <div class="login-signup-container">
+        <h2 id="auth-title">Login</h2>
+        <p id="auth-error" class="error-message"></p>
+        <form id="auth-form">
+          <input id="auth-email" type="email" name="email" placeholder="Email" class="hidden" maxlength="255" />
+          <input id="auth-username" type="text" name="username" placeholder="username" required maxlength="255" />
+          <input id="auth-password" type="password" name="password" placeholder="Password" required minlength="8" maxlength="72" />
+          <button type="submit" id="auth-submit">Login</button>
+        </form>
+        <p id="auth-toggle" class="toggle-link">Don't have an account? Sign Up</p>
+      </div>
+    </main>
+
+    <main id="app-view" class="hidden">
+      <div class="box-b1">
+        <section class="trips item1">
+          <header class="header-h2">Trips</header>
+          <p id="trip-error" class="error-message"></p>
+          <ul id="trip-list" class="ul1"></ul>
+        </section>
+        <section class="trip-info item2">
+          <div id="dashboard-view">
+            <header class="header-h2" id="trip-title">Dashboard</header>
+            <p id="trip-empty">Create or Select a Trip</p>
+            <div id="trip-content" class="hidden">
+              <div class="button-b2">
+                <button type="button" id="add-friend-btn">Add Friend</button>
+                <button type="button" id="add-expense-btn">Add Expense</button>
+                <button type="button" id="summarize-btn">Summarize Expenses with AI</button>
+              </div>
+              <div class="settlements">
+                <h3>Settlements</h3>
+                <div id="settlements"></div>
+              </div>
+              <div>
+                <header class="header-h2">Past Expenses</header>
+                <div class="past-expenses-container">
+                  <div class="scrollable-expense-list">
+                    <ul id="expense-list" class="expense-list"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="summary-view" class="hidden">
+            <h2>Trip Expense Summary</h2>
+            <div id="summary-box" class="summary-box">Loading summary...</div>
+            <button type="button" id="summary-done" class="close-button" style="background:#007bff">Done</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="modal-overlay" class="modal-overlay hidden">
+      <div class="modal" id="modal"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
